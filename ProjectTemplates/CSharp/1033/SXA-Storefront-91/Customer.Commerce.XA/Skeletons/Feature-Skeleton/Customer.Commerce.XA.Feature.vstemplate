@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Sitecore Commerce 9.1 Feature Project</Name>
+    <Description>Hidden template that creates the feature project in a Helix manner.</Description>
+    <Icon>Customer.Commerce.XA.Feature.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <DefaultName>CustomerName.Commerce.XA.Feature.LayerName</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Customer.Commerce.XA.Feature.csproj" ReplaceParameters="true" TargetFileName="$safeprojectname$.csproj">
+      <ProjectItem>Web.config</ProjectItem>
+      <ProjectItem>Web.Debug.config</ProjectItem>
+      <ProjectItem>Web.Release.config</ProjectItem>
+      <ProjectItem>packages.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="properties\AssemblyInfo.cs">assemblyinfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App_Config\Include\Feature\Commerce\Custom\$safeprojectname$.config">Customer.Commerce.XA.Feature.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Controllers\$sampleControllerName$.cs">SampleController.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Models\$sampleRenderingModelName$.cs">SampleRenderingModel.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Repositories\$sampleIRepositoryName$.cs">ISampleRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Repositories\$sampleRepositoryName$.cs">SampleRepository.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Views\web.config">Web.views.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Views\Commerce\Custom\$sampleName$\$getAllItemsName$.cshtml">GetAllItems.cshtml</ProjectItem>
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$sampleName$" Value="Sample"/>
+      <CustomParameter Name="$sampleControllerName$" Value="SampleController"/>
+      <CustomParameter Name="$sampleRenderingModelName$" Value="SampleRenderingModel"/>
+      <CustomParameter Name="$sampleRepositoryName$" Value="SampleRepository"/>
+      <CustomParameter Name="$sampleIRepositoryName$" Value="ISampleRepository"/>
+      <CustomParameter Name="$getAllItemsName$" Value="GetAllItems"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Customer.Commerce.XA.Storefront.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cca4015306c48f56</Assembly>
+    <FullClassName>Customer.Commerce.XA.Storefront.Extension.Wizards.SXAStorefrontProjectWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <sitecore isStub="false">
+      <helix layer="Feature" businessObjectiveName="" provisionTestsFolder="true" provisionEngineFolder="false" provisionSerializationFolder="true" />
+      <NuGet>
+        <packages>
+          <package name="Sitecore.Commerce.XA.Foundation.Common" version="2.0.181" ignoreDependencies="false" />
+          <package name="Sitecore.XA.Foundation.Mvc" version="4.8.1" ignoreDependencies="false" />
+          <package name="Sitecore.XA.Foundation.SitecoreExtensions" version="4.8.1" ignoreDependencies="false" />
+          <package name="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="2.0.0" ignoreDependencies="false" />
+        </packages>
+      </NuGet>
+    </sitecore>
+  </WizardData>
+</VSTemplate>

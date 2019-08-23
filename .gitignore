@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/Customer.Commerce.XA.Storefront.Extension
+/bin/Debug
+/obj/Debug
+/packages

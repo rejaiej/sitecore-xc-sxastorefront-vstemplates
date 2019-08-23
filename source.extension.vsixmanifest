@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="Customer.Commerce.XA.Storefront.Extension.1f156e90-c8f7-471a-9868-5bb5ed6d2a43" Version="1.0" Language="en-US" Publisher="Rejaie Johnson" />
+        <DisplayName>Customer.Commerce.XA.Storefront.Extension</DisplayName>
+        <Description xml:space="preserve">An extensions that helps developers scaffold certain components of an SXA Storefront solution.</Description>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,)" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" TargetVersion="[15.0,)" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" d:VsixSubPath="\ProjectTemplates\CSharp\1033\SXA-Storefront-91\Customer.Commerce.XA\Starters" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" TargetVersion="[15.0,)" d:TargetPath="ProjectTemplates\sitecore.zip" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="File" Path="ItemTemplates" TargetVersion="[15.0,)" d:TargetPath="ItemTemplates\sitecore.zip" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

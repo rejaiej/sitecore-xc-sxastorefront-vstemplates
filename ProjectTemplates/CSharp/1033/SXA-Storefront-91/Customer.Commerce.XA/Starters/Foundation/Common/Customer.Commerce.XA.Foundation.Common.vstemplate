@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Sitecore Commerce 9.1 Catalog Foundation Project</Name>
+    <Description>Foundation project template used to create or override base common functionality in Sitecore Commerce 9.1</Description>
+    <Icon>Customer.Commerce.XA.Foundation.Common.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <DefaultName>Customer.Commerce.XA.Foundation.Common</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Customer.Commerce.XA.Foundation.Common.csproj" ReplaceParameters="true" TargetFileName="$safeprojectname$.csproj">
+      <ProjectItem>packages.config</ProjectItem>
+      <ProjectItem>Web.config</ProjectItem>
+      <ProjectItem>Web.Debug.config</ProjectItem>
+      <ProjectItem>Web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App_Config\Include\Foundation\Commerce\Custom\$safeprojectname$.config">Customer.Commerce.XA.Foundation.Common.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Class1.cs">Class1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="properties\AssemblyInfo.cs">assemblyinfo.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Customer.Commerce.XA.Storefront.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cca4015306c48f56</Assembly>
+    <FullClassName>Customer.Commerce.XA.Storefront.Extension.Wizards.SXAStorefrontProjectWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <sitecore isStub="false">
+      <helix layer="Foundation" businessObjectiveName="Common" provisionTestsFolder="true" provisionEngineFolder="false" provisionSerializationFolder="true" />
+      <NuGet>
+        <packages>
+          <package name="Sitecore.Commerce.XA.Foundation.Common" version="2.0.181" ignoreDependencies="false" />
+          <package name="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="2.0.0" ignoreDependencies="false" />
+        </packages>
+      </NuGet>
+    </sitecore>
+  </WizardData>
+</VSTemplate>
