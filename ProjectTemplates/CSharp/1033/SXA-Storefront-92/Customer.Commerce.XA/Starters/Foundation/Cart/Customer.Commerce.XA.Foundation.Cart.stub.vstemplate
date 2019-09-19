@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Stub Template</Name>
+    <Description>Stub Template</Description>
+    <Icon>Customer.Commerce.XA.Foundation.Cart.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="Customer.Commerce.XA.Foundation.Cart.stub.csproj" ReplaceParameters="true" IgnoreProjectParameter="$ignoreProjectParameter$" TargetFileName="$safeprojectname$.stub.csproj">
+      <ProjectItem ReplaceParameters="true" TargetFileName="properties\AssemblyInfo.cs">assemblyinfo.cs</ProjectItem>
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$ignoreProjectParameter$" Value="true"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Customer.Commerce.XA.Storefront.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cca4015306c48f56</Assembly>
+    <FullClassName>Customer.Commerce.XA.Storefront.Extension.Wizards.SXAStorefrontHelixWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <sitecore isStub="true">
+      <helix layer="Foundation" businessObjectiveName="Cart" provisionTestsFolder="true" provisionEngineFolder="false" provisionSerializationFolder="true" />
+      <NuGet>
+        <packages>
+          <package name="Sitecore.Commerce.XA.Foundation.Connect" version="3.0.108" ignoreDependencies="false" />
+          <package name="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="2.0.0" ignoreDependencies="false" />
+        </packages>
+      </NuGet>
+    </sitecore>
+  </WizardData>
+</VSTemplate>

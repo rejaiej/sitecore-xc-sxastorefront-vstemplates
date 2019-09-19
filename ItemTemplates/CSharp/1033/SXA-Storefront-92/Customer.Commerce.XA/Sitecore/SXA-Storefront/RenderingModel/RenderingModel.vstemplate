@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="2.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Sitecore Commerce 9.1 SXA Rendering Model</Name>
+    <Description>A sample rendering model class used for SXA Storefront Renderings.</Description>
+    <Icon>RenderingModel.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <DefaultName>SampleRenderingModel.cs</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$safeitemname$.cs">SampleRenderingModel.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

@@ -18,7 +18,7 @@
   </TemplateContent>
   <WizardExtension>
     <Assembly>Customer.Commerce.XA.Storefront.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cca4015306c48f56</Assembly>
-    <FullClassName>Customer.Commerce.XA.Storefront.Extension.Wizards.SXAStorefrontProjectWizard</FullClassName>
+    <FullClassName>Customer.Commerce.XA.Storefront.Extension.Wizards.SXAStorefrontHelixWizard</FullClassName>
   </WizardExtension>
   <WizardData>
     <sitecore isStub="true">

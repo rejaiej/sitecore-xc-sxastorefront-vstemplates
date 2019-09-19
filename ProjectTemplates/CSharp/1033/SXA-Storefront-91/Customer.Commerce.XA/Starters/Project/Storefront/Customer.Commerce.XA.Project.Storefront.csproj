@@ -90,9 +90,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities"/>
-    <Folder Include="Managers"/>
-    <Folder Include="Pipelines"/>
     <Folder Include="Properties"/>
     <Folder Include="App_Config\Include\Project\Commerce\Custom\"/>
   </ItemGroup>

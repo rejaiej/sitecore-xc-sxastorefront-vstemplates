@@ -1,0 +1,31 @@
+{
+  "name": "Customer.Commerce",
+  "version": "1.0.0",
+  "description": "A series of Helix layers for Sitecore Experience Commerce",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-debug": "^3.2.0",
+    "gulp-dotnet-cli": "^1.1.0",
+    "gulp-json-modify": "^1.0.2",
+    "gulp-nuget-restore": "^0.6.0",
+    "run-sequence": "^2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somegithubrepo/Customer.Commerce.git"
+  },
+  "author": "John Doe",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/somegithubrepo/Customer.Commerce/issues"
+  },
+  "homepage": "https://github.com/somegithubrepo/Customer.Commerce#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

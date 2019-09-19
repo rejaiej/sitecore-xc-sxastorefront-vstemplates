@@ -1,0 +1,60 @@
+﻿<VSTemplate Version="2.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Sitecore Commerce 9.2 SXA Storefront Project</Name>
+    <Description>Starter template that creates multiple Feature and Foundation projects to begin SXA Storefront development.</Description>
+    <Icon>Customer.Commerce.XA.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>Customer.Commerce.XA</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name=".Solution Items">
+      </SolutionFolder>
+      <SolutionFolder Name="1. Foundation">
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Foundation.Caching.stub">
+          Foundation\Caching\Customer.Commerce.XA.Foundation.Caching.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Foundation.Cart.stub">
+          Foundation\Cart\Customer.Commerce.XA.Foundation.Cart.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Foundation.Catalog.stub">
+          Foundation\Catalog\Customer.Commerce.XA.Foundation.Catalog.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Foundation.Common.stub">
+          Foundation\Common\Customer.Commerce.XA.Foundation.Common.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Foundation.Connect.stub">
+          Foundation\Connect\Customer.Commerce.XA.Foundation.Connect.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Foundation.FederatedAuthentication.stub">
+          Foundation\FA\Customer.Commerce.XA.Foundation.FA.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Foundation.Search.stub">
+          Foundation\Search\Customer.Commerce.XA.Foundation.Search.stub.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="2. Feature">
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Feature.Account.stub">
+          Feature\Account\Customer.Commerce.XA.Feature.Account.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Feature.Cart.stub">
+          Feature\Cart\Customer.Commerce.XA.Feature.Cart.stub.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Feature.Catalog.stub">
+          Feature\Catalog\Customer.Commerce.XA.Feature.Catalog.stub.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="3. Project">
+        <ProjectTemplateLink CopyParameters="true" ProjectName="$safeprojectname$.Project.Storefront.stub">
+          Project\Storefront\Customer.Commerce.XA.Project.Storefront.stub.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Customer.Commerce.XA.Storefront.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cca4015306c48f56</Assembly>
+    <FullClassName>Customer.Commerce.XA.Storefront.Extension.Wizards.SXAStorefrontSolutionWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
