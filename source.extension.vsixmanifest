@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Customer.Commerce.XA.Storefront.Extension.1f156e90-c8f7-471a-9868-5bb5ed6d2a43" Version="1.0" Language="en-US" Publisher="Rejaie Johnson" />
-        <DisplayName>Customer.Commerce.XA.Storefront.Extension</DisplayName>
+        <Identity Id="RJ.Commerce.XA.Storefront.Extension.1f156e90-c8f7-471a-9868-5bb5ed6d2a43" Version="1.0" Language="en-US" Publisher="Rejaie Johnson" />
+        <DisplayName>RJ.Commerce.XA.Storefront.Extension</DisplayName>
         <Description xml:space="preserve">An extension that helps developers scaffold projects and project items of an SXA Storefront solution.</Description>
     </Metadata>
     <Installation>

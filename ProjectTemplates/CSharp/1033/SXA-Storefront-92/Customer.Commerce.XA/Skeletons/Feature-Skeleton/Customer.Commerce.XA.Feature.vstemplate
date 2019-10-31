@@ -5,7 +5,7 @@
     <Description>Hidden template that creates the feature project in a Helix manner.</Description>
     <Icon>Customer.Commerce.XA.Feature.ico</Icon>
     <ProjectType>CSharp</ProjectType>
-    <DefaultName>CustomerName.Commerce.XA.Feature.LayerName</DefaultName>
+    <DefaultName>Customer.Commerce.XA.Feature.BusinessObjective</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <Hidden>true</Hidden>
   </TemplateData>

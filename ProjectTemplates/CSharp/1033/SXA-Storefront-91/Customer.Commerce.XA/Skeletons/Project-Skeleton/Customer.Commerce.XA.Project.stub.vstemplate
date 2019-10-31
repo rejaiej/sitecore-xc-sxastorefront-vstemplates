@@ -5,7 +5,7 @@
     <Description>Project project template used for Sitecore Commerce 9.1. Project name format should be [CustomerName].Commerce.XA.Project.[BusinessObjectiveName]</Description>
     <Icon>Customer.Commerce.XA.Project.ico</Icon>
     <ProjectType>CSharp</ProjectType>
-    <DefaultName>CustomerName.Commerce.XA.Project.LayerName</DefaultName>
+    <DefaultName>Customer.Commerce.XA.Project.BusinessObjective</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
   </TemplateData>
   <TemplateContent>

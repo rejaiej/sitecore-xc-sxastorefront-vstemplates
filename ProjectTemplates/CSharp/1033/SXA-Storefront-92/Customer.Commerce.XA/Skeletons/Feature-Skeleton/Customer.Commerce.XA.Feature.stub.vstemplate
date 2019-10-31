@@ -5,7 +5,7 @@
     <Description>Feature project template used for Sitecore Commerce 9.2. Project name format should be [CustomerName].Commerce.XA.Feature.[BusinessObjectiveName]</Description>
     <Icon>Customer.Commerce.XA.Feature.ico</Icon>
     <ProjectType>CSharp</ProjectType>
-    <DefaultName>CustomerName.Commerce.XA.Feature.BusinessObjectiveName</DefaultName>
+    <DefaultName>Customer.Commerce.XA.Feature.BusinessObjective</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
   </TemplateData>
   <TemplateContent>
